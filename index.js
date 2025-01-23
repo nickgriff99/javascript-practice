@@ -9,9 +9,9 @@ console.log(message); */
 
 //Variables in JavaScript
 
-var userName = "itznich";
+/* var userName = "itznich";
 var totalWins = 30;
-var totalLosses = 10;
+var totalLosses = 10; */
 
 /* Variable Rules */
 
@@ -22,4 +22,40 @@ var totalLosses = 10;
 // Variables are case sensitive
 // Should be camelCase
 
-console.log(userName);
+// console.log(userName);
+
+
+/* DATATYPES BELOW */
+
+// Data Types in JavaScript
+
+/* Primitive / Value Types */
+
+var firstName = 'Nick'; // String
+var age = 26; // Number
+var recedingHairline = false; // Boolean
+var favFood; // Undefined
+var toiletPaper = null; // Null
+
+toiletPaper = 24;
+toiletPaper = null;
+toiletPaper = 'Triple Ply';
+
+/* Reference Types / Structural Types */
+
+// Object
+var person = {
+  firstName: 'Nick',
+  age: 26,
+  recedingHairline: false,
+  favFood,
+  toiletPaper: 206,
+}
+// Array
+var students = ['Nick', 'John', 'Jane', 'Doe'];
+// Function
+
+console.log('Value: ', students);
+console.log('Type: ', typeof firstName);
+
+/* END OF DATATYPES */
