@@ -78,3 +78,33 @@ var myRide = make + ' ' + model;
 var myBraggingRights = 'I drive a ' + year + ' ' + myRide;
 
 console.log(myBraggingRights);
+
+/* END OF STRINGS */
+
+// JavaScript Numbers
+
+
+// JS is only accurate up to 15 digits
+// JS will keep track up to 17 decimal places
+var totalUsers = 42;
+var purchase = 46.99;
+
+var sciNot = 123e5; // 12300000
+var sciNot = 123e-5; // 0.00123
+
+var numVal = 5 + 5; // 10
+var numVal = 5 - 5; // 0
+var numVal = 5 * 5; // 25
+var numVal = 5 / 5; // 1
+var numVal = 19 % 5; // 4
+
+// PEMDAS
+var numVal = (0.1 + 0.2) // 0.30000000000000004 /* WHY?! */
+var numVal = (0.1 * 10 + 0.2 * 10) / 10; // 0.3 /* FIXED :) */
+/* Use PEMDAS when using decimals, JS is not always accurate otherwise!!! */
+
+var numVal = 10 + '5 years'; // 105 years
+//when using strings and numbers, JS will convert the number to a string and concatenate them together
+var numVal = 10 * '5'; // 50
+//when using multiplication, JS will convert the string to a number and multiply them together
+var numVal = 10 * '5 years'; // NaN
