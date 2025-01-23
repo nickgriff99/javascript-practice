@@ -54,8 +54,27 @@ var person = {
 // Array
 var students = ['Nick', 'John', 'Jane', 'Doe'];
 // Function
+var myFunc = function() {
+  // run some code
+}
 
 console.log('Value: ', students);
 console.log('Type: ', typeof firstName);
 
 /* END OF DATATYPES */
+
+/* STRINGS BELOW */
+
+// Strings in JavaScript
+
+var make = 'Harley Davidson';
+var model = 'Iron 883';
+var year = 2017;
+
+// String Concatenation
+
+var myRide = make + ' ' + model;
+
+var myBraggingRights = 'I drive a ' + year + ' ' + myRide;
+
+console.log(myBraggingRights);
