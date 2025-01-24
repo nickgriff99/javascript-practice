@@ -29,6 +29,8 @@ var totalLosses = 10; */
 
 // Data Types in JavaScript
 
+/* ----------------------- */
+
 /* Primitive / Value Types */
 
 var firstName = 'Nick'; // String
@@ -40,6 +42,8 @@ var toiletPaper = null; // Null
 toiletPaper = 24;
 toiletPaper = null;
 toiletPaper = 'Triple Ply';
+
+/* ----------------------- */
 
 /* Reference Types / Structural Types */
 
@@ -63,6 +67,8 @@ console.log('Type: ', typeof firstName);
 
 /* END OF DATATYPES */
 
+/* ----------------------- */
+
 /* STRINGS BELOW */
 
 // Strings in JavaScript
@@ -80,6 +86,8 @@ var myBraggingRights = 'I drive a ' + year + ' ' + myRide;
 console.log(myBraggingRights);
 
 /* END OF STRINGS */
+
+/* ----------------------- */
 
 // JavaScript Numbers
 
@@ -111,6 +119,8 @@ var numVal = 10 * '5 years'; // NaN
  
 /* END OF JAVASCRIPT NUMBERS */
 
+/* ----------------------- */
+
 // JavaScript Practice
 
 var carMake = 'Toyota'; // String
@@ -122,6 +132,8 @@ var carSeats = 5; // Number
 var carMileage = 130000; // Number
 
 /* END OF JAVASCRIPT PRACTICE */
+
+/* ----------------------- */
 
 // JavaScript Practice 2 
 
@@ -136,6 +148,8 @@ var idNumber = '123456789'; // String
 var etc = 'etc'; // String
 
 /* END OF JAVASCRIPT PRACTICE 2 */
+
+/* ----------------------- */
 
 // JavaScript Practice 3
 
@@ -160,3 +174,28 @@ let finalPrice = priceAfterDiscount + taxes; // Number
 console.log("Final Price: $" + finalPrice.toFixed(2));
 
 /* END OF JAVASCRIPT PRACTICE 3 */
+
+/* ----------------------- */
+
+/* JavaScript Logical Operators */
+
+// === equal to
+// !== not equal to
+// > greater than
+// < less than
+// >= greater than or equal to
+// <= less than or equal to
+
+// && and
+// || or
+// ! not
+
+var skater1 = 9.5;
+var skater2 = 9;
+var skater3 = 9;
+
+if (skater2 > skater3 && skater2 <= skater1 && skater1 < 100) {
+  console.log('Move on to the next round!');
+} else if (skater3 > skater2 || skater3 === skater2 && skater2 < skater1) {
+  console.log('skater3 is steppin up their game!');
+}
