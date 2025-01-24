@@ -137,3 +137,26 @@ var etc = 'etc'; // String
 
 /* END OF JAVASCRIPT PRACTICE 2 */
 
+// JavaScript Practice 3
+
+let item1 = 10.50; // Number
+let item2 = 15.00; // Number
+let item3 = 20.00; // Number
+let item4 = 12.00; // Number
+let item5 = 11.00; // Number
+let item6 = 10.00; // Number
+let totalPrice = item1 + item2 + item3 + item4 + item5 + item6; // Number
+console.log("Total Price (before discount): $" + totalPrice);
+
+let discount = 0.25; // Number
+let priceAfterDiscount = totalPrice - (totalPrice * discount); // Number
+console.log("Price After Discount: $" + priceAfterDiscount.toFixed(2));
+
+let taxRate = 0.0775; // Number
+let taxes = priceAfterDiscount * taxRate; // Number
+console.log("Taxes: $" + taxes.toFixed(2));
+
+let finalPrice = priceAfterDiscount + taxes; // Number
+console.log("Final Price: $" + finalPrice.toFixed(2));
+
+/* END OF JAVASCRIPT PRACTICE 3 */
