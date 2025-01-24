@@ -108,3 +108,32 @@ var numVal = 10 + '5 years'; // 105 years
 var numVal = 10 * '5'; // 50
 //when using multiplication, JS will convert the string to a number and multiply them together
 var numVal = 10 * '5 years'; // NaN
+ 
+/* END OF JAVASCRIPT NUMBERS */
+
+// JavaScript Practice
+
+var carMake = 'Toyota'; // String
+var carModel = 'Camry'; // String
+var carYear = 2012; // Number
+var carColor = 'Black'; // String
+var hasManualTransmission = false; // Boolean
+var carSeats = 5; // Number
+var carMileage = 130000; // Number
+
+/* END OF JAVASCRIPT PRACTICE */
+
+// JavaScript Practice 2 
+
+var dateOfBirth = 1999; // Number
+var age = 2025 - dateOfBirth; // Number
+var organDonor = true; // Boolean
+var streetAddress = '123 Main St'; // String
+var city = 'Orem'; // String
+var state = 'Utah'; // String
+var zipCode = 84058; // Number
+var idNumber = '123456789'; // String
+var etc = 'etc'; // String
+
+/* END OF JAVASCRIPT PRACTICE 2 */
+
