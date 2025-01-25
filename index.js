@@ -404,7 +404,8 @@ if (readyToSkate) {
 
 // JavaScript Arrays
 
-var tvShows = ['Psych', 
+var tvShows = [
+  'Psych', 
   'The Office', 
   'Parks and Rec', 
   'The Mandalorian'
@@ -426,3 +427,48 @@ console.log(userSavedMovies.length); // 2
 
 /* ----------------------- */
 
+// JavaScript Loops
+
+var tvShows = [
+  'Psych', 
+  'The Office', 
+  'Parks and Rec', 
+  'The Mandalorian'
+]; // Array
+
+var userSavedMovies = []; 
+
+for (var i = 0; i < tvShows.length; i++) {
+  console.log(i);
+} // 0, 1, 2, 3
+
+// - < 3 = true; 0 + 1 = 1
+// - < 3 = true; 1 + 1 = 2
+// - < 3 = true; 2 + 1 = 3
+// - < 3 = false; exit loop
+
+for (var i = 0; i < tvShows.length; i++) {
+  console.log(tvShows[i]);
+} // Psych, The Office, Parks and Rec, The Mandalorian
+
+var completedItems = [];
+
+var toDos = [
+  { title: 'item 1', completed: true },
+  { title: 'item 2', completed: false },
+  { title: 'item 3', completed: false },
+  { title: 'item 4', completed: true }
+];
+
+for (var x = 0; x < toDoes.length; x++) {
+  if (toDos[x].completed) {
+    completedItems.push(toDoes[i]);
+  }
+}
+
+console.log(toDos[0].title); // item 1
+console.log(completedItems); // item 1, item 4
+
+/* End of JavaScript Loops */
+
+/* ----------------------- */
