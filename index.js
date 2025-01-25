@@ -205,3 +205,20 @@ if (skater2 > skater3 && skater2 <= skater1 && skater1 < 100) {
 } else if (skater3 > 5 && isJackedUpOnCaffeine) {
   console.log('skater3 is on fire! gold for days!');
 }
+
+// JavaScript Practice 4
+
+let currentLightColor = 'red'; // String
+currentLightColor = 'green'; // String
+
+if (currentLightColor === 'red') {
+  console.log('The light is red, please stop.');
+} else if (currentLightColor === 'yellow') {
+  console.log('The light is yellow, please slow down.');
+} else if (currentLightColor === 'green') {
+  console.log('The light is green, please go.');
+} else {
+  console.log('The light is broken, please proceed with caution.');
+}
+
+/* END OF JAVASCRIPT PRACTICE 4 */
