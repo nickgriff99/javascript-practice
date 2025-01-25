@@ -401,3 +401,28 @@ if (readyToSkate) {
 /* END OF JAVASCRIPT DEBUGGING PRACTICE */
 
 /* ----------------------- */
+
+// JavaScript Arrays
+
+var tvShows = ['Psych', 
+  'The Office', 
+  'Parks and Rec', 
+  'The Mandalorian'
+]; // Array
+
+console.log(tvShows [0]); // Psych
+
+var userSavedMovies = []; // Empty Array
+
+userSavedMovies.push('Interstellar'); // Adds an item to the end of the array
+userSavedMovies.push('The Lord of the Rings'); // Adds an item to the end of the array
+userSavedMovies.push('Star Wars'); // Adds an item to the end of the array
+
+userSavedMovies.pop(); // Removes the last item in the array
+
+console.log(userSavedMovies.length); // 2
+
+/* End of JavaScript Arrays */
+
+/* ----------------------- */
+
