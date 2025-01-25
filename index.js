@@ -489,3 +489,51 @@ while (bottles > 0) {
 /* End of JavaScript Loops */
 
 /* ----------------------- */
+
+// JavaScript Functions
+
+function calcArea(w, l) {
+  return w * l;
+} // Function
+
+var kitchenArea = calcArea(15, 18); // 270
+var bedroomArea = calcArea(12, 10); // 120
+
+console.log(kitchenArea); // 270
+console.log(bedroomArea); // 120
+
+function toCelsius(f) {
+  var temp = (f - 32) * 5 / 9;
+  return temp.toFixed(2);
+}
+
+var cel = toCelsius(46); // 7.777777777777778
+
+var weather = 'The temperature is ' + toCelsius(46) + ' degrees Celsius.'; // The temperature is 7.78 degrees Celsius.
+
+console.log(weather); // The temperature is 7.78 degrees Celsius.
+console.log(cel); // 7.777777777777778
+
+var warrior = {
+  name: 'Super Tuff Guy',
+  attack: 70,
+  defense: 50,
+  mana: 100
+};
+
+function levelUp(prop, value) {
+  warrior[prop] += value;
+}
+
+levelUp('attack', 2); // 72
+levelUp('defense', 7); // 57
+levelUp('mana', 17); // 117
+/* warrior.attack += 2; // 72
+warrior.defense += 5; // 55
+warrior.mana -= 10; // 90 */
+
+console.log(warrior); // { name: 'Super Tuff Guy', attack: 72, defense: 55, mana: 110 }
+
+/* End of JavaScript Functions */
+
+/* ----------------------- */
