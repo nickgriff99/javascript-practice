@@ -469,6 +469,23 @@ for (var x = 0; x < toDoes.length; x++) {
 console.log(toDos[0].title); // item 1
 console.log(completedItems); // item 1, item 4
 
+var bottles = 99;
+while (bottles > 0) {
+  console.log(bottles + ' bottles of beer on the wall'); 
+  bottles--; 
+} // while loop
+// 99 bottles of beer on the wall, 98 bottles of beer on the wall, 97 bottles of beer on the wall, etc.
+
+var bottles = 99;
+while (bottles > 0) {
+  if (bottles !== 1) {
+    console.log(bottles + ' bottles of beer on the wall'); 
+  } else {
+    console.log(bottles + ' bottle of beer on the wall'); 
+  }
+  bottles -= 1; 
+} // do while loop
+
 /* End of JavaScript Loops */
 
 /* ----------------------- */
