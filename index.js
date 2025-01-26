@@ -48,19 +48,21 @@ toiletPaper = 'Triple Ply';
 /* Reference Types / Structural Types */
 
 // Object
-var person = {
-  firstName: 'Nick',
-  age: 26,
-  recedingHairline: false,
-  favFood,
-  toiletPaper: 206,
-}
+  // var person = {
+  //   firstName: 'Nick',
+  //   age: 26,
+  //   recedingHairline: false,
+  //   favFood: 'Pizza',
+  //   toiletPaper: 206,
+  // };
+
 // Array
 var students = ['Nick', 'John', 'Jane', 'Doe'];
+
 // Function
 var myFunc = function() {
   // run some code
-}
+};
 
 console.log('Value: ', students);
 console.log('Type: ', typeof firstName);
@@ -204,7 +206,7 @@ if (skater2 > skater3 && skater2 <= skater1 && skater1 < 100) {
   console.log('skater3 is stepping up their game!');
 } else if (skater3 > 5 && isJackedUpOnCaffeine) {
   console.log('skater3 is on fire! gold for days!');
-}
+};
 
 // JavaScript Practice 4
 
@@ -429,62 +431,62 @@ console.log(userSavedMovies.length); // 2
 
 // JavaScript Loops
 
-var tvShows = [
-  'Psych', 
-  'The Office', 
-  'Parks and Rec', 
-  'The Mandalorian'
-]; // Array
+  var tvShows = [
+    'Psych', 
+    'The Office', 
+    'Parks and Rec', 
+    'The Mandalorian'
+  ]; // Array
 
-var userSavedMovies = []; 
+  var userSavedMovies = []; 
 
-for (var i = 0; i < tvShows.length; i++) {
-  console.log(i);
-} // 0, 1, 2, 3
+  for (var i = 0; i < tvShows.length; i++) {
+    console.log(i);
+  } // 0, 1, 2, 3
 
-// - < 3 = true; 0 + 1 = 1
-// - < 3 = true; 1 + 1 = 2
-// - < 3 = true; 2 + 1 = 3
-// - < 3 = false; exit loop
+  // - < 3 = true; 0 + 1 = 1
+  // - < 3 = true; 1 + 1 = 2
+  // - < 3 = true; 2 + 1 = 3
+  // - < 3 = false; exit loop
 
-for (var i = 0; i < tvShows.length; i++) {
-  console.log(tvShows[i]);
-} // Psych, The Office, Parks and Rec, The Mandalorian
+  for (var i = 0; i < tvShows.length; i++) {
+    console.log(tvShows[i]);
+  } // Psych, The Office, Parks and Rec, The Mandalorian
 
-var completedItems = [];
+  var completedItems = [];
 
-var toDos = [
-  { title: 'item 1', completed: true },
-  { title: 'item 2', completed: false },
-  { title: 'item 3', completed: false },
-  { title: 'item 4', completed: true }
-];
+  var toDos = [
+    { title: 'item 1', completed: true },
+    { title: 'item 2', completed: false },
+    { title: 'item 3', completed: false },
+    { title: 'item 4', completed: true }
+  ];
 
-for (var x = 0; x < toDoes.length; x++) {
-  if (toDos[x].completed) {
-    completedItems.push(toDoes[i]);
+  for (var x = 0; x < toDoes.length; x++) {
+    if (toDos[x].completed) {
+      completedItems.push(toDoes[i]);
+    }
   }
-}
 
-console.log(toDos[0].title); // item 1
-console.log(completedItems); // item 1, item 4
+  console.log(toDos[0].title); // item 1
+  console.log(completedItems); // item 1, item 4
 
-var bottles = 99;
-while (bottles > 0) {
-  console.log(bottles + ' bottles of beer on the wall'); 
-  bottles--; 
-} // while loop
-// 99 bottles of beer on the wall, 98 bottles of beer on the wall, 97 bottles of beer on the wall, etc.
-
-var bottles = 99;
-while (bottles > 0) {
-  if (bottles !== 1) {
+  var bottles = 99;
+  while (bottles > 0) {
     console.log(bottles + ' bottles of beer on the wall'); 
-  } else {
-    console.log(bottles + ' bottle of beer on the wall'); 
-  }
-  bottles -= 1; 
-} // do while loop
+    bottles--; 
+  } // while loop
+  // 99 bottles of beer on the wall, 98 bottles of beer on the wall, 97 bottles of beer on the wall, etc.
+
+  var bottles = 99;
+  while (bottles > 0) {
+    if (bottles !== 1) {
+      console.log(bottles + ' bottles of beer on the wall'); 
+    } else {
+      console.log(bottles + ' bottle of beer on the wall'); 
+    }
+    bottles -= 1; 
+  } // do while loop
 
 /* End of JavaScript Loops */
 
@@ -492,48 +494,114 @@ while (bottles > 0) {
 
 // JavaScript Functions
 
-function calcArea(w, l) {
-  return w * l;
-} // Function
+  function calcArea(w, l) {
+    return w * l;
+  } // Function
 
-var kitchenArea = calcArea(15, 18); // 270
-var bedroomArea = calcArea(12, 10); // 120
+  var kitchenArea = calcArea(15, 18); // 270
+  var bedroomArea = calcArea(12, 10); // 120
 
-console.log(kitchenArea); // 270
-console.log(bedroomArea); // 120
+  console.log(kitchenArea); // 270
+  console.log(bedroomArea); // 120
 
-function toCelsius(f) {
-  var temp = (f - 32) * 5 / 9;
-  return temp.toFixed(2);
-}
+  function toCelsius(f) {
+    var temp = (f - 32) * 5 / 9;
+    return temp.toFixed(2);
+  }
 
-var cel = toCelsius(46); // 7.777777777777778
+  var cel = toCelsius(46); // 7.777777777777778
 
-var weather = 'The temperature is ' + toCelsius(46) + ' degrees Celsius.'; // The temperature is 7.78 degrees Celsius.
+  var weather = 'The temperature is ' + toCelsius(46) + ' degrees Celsius.'; // The temperature is 7.78 degrees Celsius.
 
-console.log(weather); // The temperature is 7.78 degrees Celsius.
-console.log(cel); // 7.777777777777778
+  console.log(weather); // The temperature is 7.78 degrees Celsius.
+  console.log(cel); // 7.777777777777778
 
-var warrior = {
-  name: 'Super Tuff Guy',
-  attack: 70,
-  defense: 50,
-  mana: 100
-};
+  var warrior = {
+    name: 'Super Tuff Guy',
+    attack: 70,
+    defense: 50,
+    mana: 100
+  };
 
-function levelUp(prop, value) {
-  warrior[prop] += value;
-}
+  function levelUp(prop, value) {
+    warrior[prop] += value;
+  }
 
-levelUp('attack', 2); // 72
-levelUp('defense', 7); // 57
-levelUp('mana', 17); // 117
-/* warrior.attack += 2; // 72
-warrior.defense += 5; // 55
-warrior.mana -= 10; // 90 */
+  levelUp('attack', 2); // 72
+  levelUp('defense', 7); // 57
+  levelUp('mana', 17); // 117
+  /* warrior.attack += 2; // 72
+  warrior.defense += 5; // 55
+  warrior.mana -= 10; // 90 */
 
-console.log(warrior); // { name: 'Super Tuff Guy', attack: 72, defense: 55, mana: 110 }
+  console.log(warrior); // { name: 'Super Tuff Guy', attack: 72, defense: 55, mana: 110 }
 
 /* End of JavaScript Functions */
 
 /* ----------------------- */
+
+// JavaScript Objects
+
+ // What is an Object?
+ // Data types in JS
+ // Composite data type: contains
+ // Stores data in key : value pairs
+ 
+ // How do we write an object?
+
+ const nickObject = {
+  name: 'Nick',
+  age: 26,
+  hobbies: ['coding', 'gaming', 'sports'],
+  education: {
+    college: 'UVU',
+    tradeSchool: 'Devslopes',
+  },
+  lovesDogs: true,
+ };
+
+ // Why does this matter?
+  // Objects are used to store data
+  // Objects allow us to group alike data in the same place when that data does not fit neatly into a list or array
+  // This is really useful because it means we can use Objects to model real life like people, cars, etc.
+
+  const inNOutRest = {
+    name: 'In-N-Out',
+    location: 'Orem',
+    rating: 4.5,
+    menu: ['Double Double', 'Fries', 'Shake'],
+    isOpen: true,
+    avgPrice: 10.50,
+    reviews: [{}, {}, {}],
+    passedInspection: true,
+  };
+
+  // How do we access object data?
+  // Dot notation
+  // dot-notation: we know the key we want to access
+
+  console.log(nickObject.name); // Nick
+  console.log(nickObject.hobbies[0]); // coding
+  console.log(nickObject.education.college); // UVU
+
+  console.log(inNOutRest.name); // In-N-Out
+  console.log(inNOutRest.menu[0]); // Double Double
+  console.log(inNOutRest.reviews); // [{}, {}, {}]
+
+  // Bracket notation
+  // bracket-notation: we don't know the key we want to access and need to evaluate it
+
+  const userSearch = 'name';
+
+  console.log(nickObject[userSearch]); // Nick
+  console.log(nickObject['age']); // 26
+
+  const userSearch2 = "menu"; // String Double Double or Fries or Shake
+
+  console.log(inNOutRest[userSearch2][0]); // Double Double
+  console.log(inNOutRest['location']); // Orem
+
+/* End of JavaScript Objects */
+
+/* ----------------------- */
+
