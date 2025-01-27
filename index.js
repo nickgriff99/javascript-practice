@@ -605,3 +605,46 @@ console.log(userSavedMovies.length); // 2
 
 /* ----------------------- */
 
+// JavaScript Object Functions
+
+const devslopesDiner = {
+  name: 'Devslopes Diner',
+  cuisine: 'American',
+  location: '555 Main St',
+  rating: 5,
+  avgPrice: 15,
+  reviews: [{}, {}, {}],
+  passedInspection: true,
+}
+
+console.log('Object.keys: ', Object.keys(devslopesDiner)); // [ 'name', 'cuisine', 'location', 'rating', 'avgPrice', 'reviews', 'passedInspection' ]
+console.log('Object.values: ', Object.values(devslopesDiner)); // [ 'Devslopes Diner', 'American', '555 Main St', 5, 15, [ {}, {}, {} ], true ]
+console.log('Object.entries: ', Object.entries(devslopesDiner)); // [ [ 'name', 'Devslopes Diner' ], [ 'cuisine', 'American' ], [ 'location', '555 Main St' ], [ 'rating', 5 ], [ 'avgPrice', 15 ], [ 'reviews', [ {}, {}, {} ] ], [ 'passedInspection', true ] ]
+console.log(
+  'Object.hasOwnProperty: ',
+   devslopesDiner.hasOwnProperty('name')
+); // true
+
+// Creating JavaScript Methods
+
+devslopesDiner.printAd = function() {
+  console.log(
+    'Come on down to ${devslopesDiner.name} for some ${devslopesDiner.cuisine} food! and we are located at ${devslopesDiner.location}'
+  );
+};
+
+devslopesDiner.printAd();
+
+// Static vs Instance Methods
+
+// Static
+Object.keys(devslopesDiner);
+
+// Instance
+devslopesDiner.hasOwnProperty("name");
+
+/* End of JavaScript Object Functions */
+
+/* ----------------------- */
+
+
