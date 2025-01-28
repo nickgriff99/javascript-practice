@@ -647,4 +647,44 @@ devslopesDiner.hasOwnProperty("name");
 
 /* ----------------------- */
 
+// JavaScript looping through objects
 
+// Problem: objects have keys that we set, not predetermined indices like arrays
+// Objects are not inherently iterable. They do not store key-values in a fixed sequence
+// We still have tools for iterating over objects
+// Solution: Object.keys, Object.values, Object.entries
+// These methods allow us to iterate over the keys, values, and entries of an object
+
+const devslopesDiner = {
+  name: 'Devslopes Diner',
+  cuisine: 'American',
+  location: '555 Main St',
+  rating: 5,
+  avgPrice: 15,
+  reviews: [{}, {}, {}],
+  passedInspection: true,
+};
+
+// for... in
+// Iterates over all the properties of an object, including inherited properties from the object
+// Use keys of an object in iteration. We do it when we want to iterate over EVERY property of an object
+
+for (const key in devslopesDiner) {
+  console.log(key, devslopesDiner[key]);
+};
+
+// for... of
+// Iterates over the values of an iterable object, array, or other special object
+// Use values of an object in iteration. We do it when we want iterate over just the keys/values we placed in the object
+
+for (const key of Object.keys(devslopesDiner)) {
+  console.log(key, devslopesDiner[key]);
+}
+
+// Object.entries(), Object.keys(), Object.values()
+// Benefits: we can iterate over objects, we can use the keys, values, and entries of an object in iteration. More control over iteration
+// Better option for iterating over complex objects and controlling which keys we look at
+
+/* End of JavaScript Looping through objects */
+
+/* ----------------------- */
