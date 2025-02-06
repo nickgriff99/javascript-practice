@@ -744,3 +744,31 @@ console.log(doesIdExist(people, 5)) // false
 /* End of .find and .filter */
 
 /* ----------------------- */
+
+// Array.map()
+
+// .map() is a method that creates a new ARRAY with the results of calling a provided function on every element in the calling array
+
+var numbers = [2, 5, 7, 1]
+
+var classRoom = {
+  grade: '3rd Grade',
+  students: [
+    { name: 'Nick', score: 90 },
+    { name: 'John', score: 80 },
+    { name: 'Jane', score: 85 },
+  ]
+}
+
+var helloStudents = classRoom.students.map(function(student, i, array) { // i is the index
+  console.log(array);
+  return 'Index ${i}: Hello ${student.name}, you got a ${student.score} on your test!';
+})
+
+console.log(helloStudents)
+
+/* End of Array.map() */
+
+/* ----------------------- */
+
+
