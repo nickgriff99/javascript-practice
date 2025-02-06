@@ -688,3 +688,59 @@ for (const key of Object.keys(devslopesDiner)) {
 /* End of JavaScript Looping through objects */
 
 /* ----------------------- */
+
+// .find and .filter
+
+// .find()
+
+// .find() is a method that returns the first element in an array that passes a test (provided as a function)
+
+const originalNumbers = [1, 2, 3, 4, 5]
+
+let doubledNumbers = []
+for (let number of originalNumbers) {
+  doubledNumbers.push(number * 2)
+}
+
+// OR (much easier to read)
+
+const originalNumbersTwo = [1, 2, 3, 4, 5]
+
+let doubledNumbersTwo = originalNumbers.map(function(number) {
+  return number * 2
+})
+
+// map() is a method that creates a new ARRAY with the results of calling a provided function on every element in the calling array
+// filter() is a method that creates a new ARRAY with all elements that pass the test implemented by the provided function
+// find() is a method that returns the first element in an ARRAY that passes a test (provided as a function)
+
+const people = [
+  { name: 'Nick', id: 1 },
+  { name: 'John', id: 2 },
+  { name: 'John', id: 3 },
+  { name: 'Doe', id: 4 },
+]
+
+console.log(
+  people.filter(person => person.name === 'John')
+)
+
+console.log(
+  people.find(person => person.name === 'John')
+)
+
+const doesIdExist = (people, id) => {
+  const foundPerson = people.find(person => person.id === id)
+  if (foundPerson) {
+    return true
+  } else {
+    return false
+  }
+}
+
+console.log(doesIdExist(people, 2)) // true
+console.log(doesIdExist(people, 5)) // false
+
+/* End of .find and .filter */
+
+/* ----------------------- */
