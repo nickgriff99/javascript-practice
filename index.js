@@ -755,8 +755,9 @@ var classRoom = {
   grade: '3rd Grade',
   students: [
     { name: 'Nick', score: 90 },
-    { name: 'John', score: 80 },
-    { name: 'Jane', score: 85 },
+    { name: 'John', score: 92 },
+    { name: 'Jane', score: 87 },
+    { name: 'Jane', score: 78 },
   ]
 }
 
@@ -765,10 +766,36 @@ var helloStudents = classRoom.students.map(function(student, i, array) { // i is
   return 'Index ${i}: Hello ${student.name}, you got a ${student.score} on your test!';
 })
 
-console.log(helloStudents)
+console.log(helloStudents);
 
 /* End of Array.map() */
 
 /* ----------------------- */
 
+// Array method chaining
 
+// Method chaining is a technique used to simplify code by chaining multiple methods together
+
+var starStudents = classRoom.students
+  .filter(function(student) { // pulled from line 754
+    return student.score >= 80;
+  })
+  .map(function(value) {
+    value.score += 5;
+    return value;
+  })
+  .reduce(function(acc, val, array) {
+    const total = acc.sum + val.score;
+    return {
+      sum: total,
+      arr: array,
+    };
+  }, {sum: 0, arr: []});
+
+  var studentAverage = starStudents.sum / starStudents.arr.length;
+
+console.log(starStudents, studentAverage);
+
+/* End of Array method chaining */
+
+/* ----------------------- */
