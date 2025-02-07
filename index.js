@@ -799,3 +799,84 @@ console.log(starStudents, studentAverage);
 /* End of Array method chaining */
 
 /* ----------------------- */
+
+// JavaScript Scope
+
+// Scope determines the accessibility (visibility) of variables
+
+// Global - A global variable has global scope:
+// All scripts and functions on a web page can access it
+
+var name = 'Nick'; // Global variable
+var user1 = {
+  name: 'Joe',
+  age: 25,
+  data: 'all the important things',
+}
+
+if (true) {
+  var name = 'Andrew'; // Global variable
+}
+
+console.log(window); // Window object
+
+window.name = 'John'; // Global variable
+
+// Local - A local variable has local scope:
+// become LOCAL to the function in which they are declared
+
+function userBDay() {
+  var newAge = user1.age + 1; // Local variable
+  user1.age = newAge;
+  console.log('Happy Birthday ' + user1.name + ' you are now ' + newAge + ' years old!');
+}
+
+userBDay(user1.age); // Happy Birthday John You are now 26 years old!
+console.log(userBDay); // [Function: userBDay]
+
+/* ES2015 / ES6 */
+// Introduced let and const
+// These 2 keywords provide block-scoped variables (and constants) in JavaScript
+
+// Variables declared inside a block {} CANNOT be accessed from outside the block
+
+// let
+
+var x = 10; // Global variable // if we use let x = 10; it will be a local variable and be undefined outside of the block
+if (true) {
+  x = 3; // Global variable
+  if (true) {
+    x = 'Hello'; // Local variable
+    for (var i = 0; i < 4; i++) {
+      x = i; // Local variable
+  }
+  }
+}
+
+console.log(x); // 3
+console.log(i); // 4
+
+// const
+
+const animal = 'Racoon'; // Global variable
+animal = 'Cat'; // Error: Assignment to constant variable
+
+const namer = 25; // Global variable
+const user2 = {
+  name: 'Rambo',
+  age: 73,
+}
+
+function userBDay2() {
+  const newAge = user2.age + 1; // Local variable
+  user2.age = newAge;
+  console.log('Happy Birthday ' + user2.name + ' you are now ' + newAge + ' years old!');
+}
+
+userBDay2(user2.age); // Happy Birthday Rambo You are now 74 years old!
+
+console.log(user2); // { name: 'Rambo', age: 74 }
+
+/* End of JavaScript Scope */
+
+/* ----------------------- */
